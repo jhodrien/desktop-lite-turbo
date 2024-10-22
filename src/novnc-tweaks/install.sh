@@ -13,7 +13,7 @@ patch << EOB
          document.documentElement.classList.remove("noVNC_loading");
 
 -        let autoconnect = WebUtil.getConfigVar('autoconnect', false);
-+        let autoconnect = WebUtil.getConfigVar('autoconnect', true);
++        let autoconnect = WebUtil.getConfigVar('autoconnect', $PROMPT);
          if (autoconnect === 'true' || autoconnect == '1') {
              autoconnect = true;
              UI.connect();
@@ -27,7 +27,7 @@ patch << EOB
          UI.initSetting('encrypt', (window.location.protocol === "https:"));
          UI.initSetting('view_clip', false);
 -        UI.initSetting('resize', 'off');
-+        UI.initSetting('resize', 'remote');
++        UI.initSetting('resize', '$RESIZE');
          UI.initSetting('quality', 6);
          UI.initSetting('compression', 2);
          UI.initSetting('shared', true);
