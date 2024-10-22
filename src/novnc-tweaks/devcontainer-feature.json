@@ -4,10 +4,10 @@
     "version": "1.0.0",
     "description": "A feature to adjust noVNC",
     "options": {
-        "prompt": {
+        "autoconnect": {
             "type": "boolean",
-            "default": false,
-            "description": "Should noVNC display a connect prompt"
+            "default": true,
+            "description": "Should noVNC autoconnect"
         },
         "resize": {
             "type": "string",
