@@ -26,7 +26,7 @@ patch << EOB
          UI.initSetting('port', port);
          UI.initSetting('encrypt', (window.location.protocol === "https:"));
          UI.initSetting('view_clip', false);
--        UI.initSetting('resize', 'none');
+-        UI.initSetting('resize', 'off');
 +        UI.initSetting('resize', 'remote');
          UI.initSetting('quality', 6);
          UI.initSetting('compression', 2);
