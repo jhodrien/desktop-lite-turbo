@@ -8,6 +8,16 @@
             "type": "boolean",
             "default": false,
             "description": "Should noVNC display a connect prompt"
+        },
+        "resize": {
+            "type": "string",
+            "enum": [
+                "none",
+                "remote",
+                "scale"
+            ],
+            "default": "remote",
+            "description": "Choose how resizing should be handled"
         }
     },
     "installsAfter": [
