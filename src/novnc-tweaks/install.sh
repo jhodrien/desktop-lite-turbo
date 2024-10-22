@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "The value of PROMPT is: ${PROMPT}"
+echo "The value of PROMPT is: ${AUTOCONNECT}"
 echo "The value of RESIZE is: ${RESIZE}"
 
 cd /usr/local/novnc/noVNC-1.2.0/app
@@ -13,7 +13,7 @@ patch << EOB
          document.documentElement.classList.remove("noVNC_loading");
 
 -        let autoconnect = WebUtil.getConfigVar('autoconnect', false);
-+        let autoconnect = WebUtil.getConfigVar('autoconnect', $PROMPT);
++        let autoconnect = WebUtil.getConfigVar('autoconnect', $AUTOCONNECT);
          if (autoconnect === 'true' || autoconnect == '1') {
              autoconnect = true;
              UI.connect();
