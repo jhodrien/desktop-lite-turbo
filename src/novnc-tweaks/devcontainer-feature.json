@@ -1,0 +1,16 @@
+{
+    "name": "noVNC tweaks",
+    "id": "novnc-tweaks",
+    "version": "1.0.0",
+    "description": "A feature to adjust noVNC",
+    "options": {
+        "prompt": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Should noVNC display a connect prompt"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/desktop-lite"
+    ]
+}
