@@ -15,7 +15,7 @@ A feature to adjust noVNC
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| prompt | Should noVNC display a connect prompt | boolean | false |
+| autoconnect | Should noVNC autoconnect | boolean | true |
 | resize | Choose how resizing should be handled | string | remote |
 
 
