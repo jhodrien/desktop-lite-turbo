@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "The value of PROMPT is: ${AUTOCONNECT}"
+echo "The value of NOVNCAUTOCONNECT is: ${NOVNCAUTOCONNECT}"
 echo "The value of RESIZE is: ${RESIZE}"
 
 cd /usr/local/novnc/noVNC-1.2.0/app
