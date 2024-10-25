@@ -15,7 +15,7 @@ A feature to adjust noVNC
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| novncautoconnect | Should noVNC autoconnect | boolean | true |
+| autoconnect | Should noVNC autoconnect | boolean | true |
 | resize | Choose how resizing should be handled | string | remote |
 
 
