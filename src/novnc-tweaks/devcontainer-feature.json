@@ -4,7 +4,7 @@
     "version": "1.0.1",
     "description": "A feature to adjust noVNC",
     "options": {
-        "novncautoconnect": {
+        "autoconnect": {
             "type": "boolean",
             "default": true,
             "description": "Should noVNC autoconnect"
