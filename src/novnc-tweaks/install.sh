@@ -13,7 +13,7 @@ patch << EOB
          document.documentElement.classList.remove("noVNC_loading");
 
 -        let autoconnect = WebUtil.getConfigVar('autoconnect', false);
-+        let autoconnect = WebUtil.getConfigVar('autoconnect', $AUTOCONNECT);
++        let autoconnect = WebUtil.getConfigVar('autoconnect', $NOVNCAUTOCONNECT);
          if (autoconnect === 'true' || autoconnect == '1') {
              autoconnect = true;
              UI.connect();
