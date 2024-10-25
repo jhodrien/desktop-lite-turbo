@@ -1,7 +1,7 @@
 {
     "name": "noVNC tweaks",
     "id": "novnc-tweaks",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A feature to adjust noVNC",
     "options": {
         "novncautoconnect": {
